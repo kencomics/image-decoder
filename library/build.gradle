@@ -7,6 +7,7 @@ plugins {
 group = 'tachiyomiorg'
 
 android {
+    namespace = "ru.kencomics.image.decoder"
     compileSdkVersion 35
     ndkVersion "26.2.11394342"
 

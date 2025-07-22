@@ -49,12 +49,12 @@ afterEvaluate {
     publishing {
         publications {
             // Creates a Maven publication called "release".
-//            release(MavenPublication) {
-////                from components.release
-//                groupId = "tachiyomiorg"
-//                artifactId = "image-decoder"
-//                version = "1.0"
-//            }
+            create<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "tachiyomiorg"
+                artifactId = "image-decoder"
+                version = "1.0"
+            }
         }
     }
 }
